@@ -1,13 +1,11 @@
-public class celling {
+public class floor {
     public static void main(String[] args) {
-
         int[] arr={2,4,6,54,69,78,456};
-        int cel=cellingmet(arr,55);
-        System.out.println("celling of array is : "+cel);
-        
+        int cel=cellingmet(arr,77);
+        System.out.println("celling of array is : "+cel);        
     }
 
-    static int cellingmet(int[] arr,int target)
+        static int cellingmet(int[] arr,int target)
     { 
         int start=0;
         int end=arr.length-1;
@@ -28,7 +26,6 @@ public class celling {
             else
             return mid;
         }
-        return arr[start];
+        return arr[end];
     }
-    
 }
