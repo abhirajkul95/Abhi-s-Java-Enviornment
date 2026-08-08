@@ -24,8 +24,6 @@ public class mountainarray {
         else 
         start=mid+1;
 
-       
-
        }
 
 
