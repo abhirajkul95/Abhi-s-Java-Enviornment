@@ -4,7 +4,7 @@ public class noofrotations {
         int arr[]={3,4,7,18,45,1,2};
         int pivot=pivotsearch(arr);
         System.out.println(pivot);
-        int end=arr.length-1;
+        
         int rotations;
         if(pivot==-1)
         {
