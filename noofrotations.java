@@ -10,7 +10,7 @@ public class noofrotations {
         {
            rotations=0;
         }
-        else rotations= end - pivot;
+        else rotations= pivot+1;
         System.out.println(rotations);
         
 
