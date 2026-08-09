@@ -1,8 +1,8 @@
 public class searchinrotated {
     public static void main(String[] args) {
 
-        int[] arr ={4,5,6,7,8,1,2,3};
-        int ans=search(arr,1);
+        int[] arr ={4,5,6,7,8,9,1,2,3};
+        int ans=search(arr,9);
         System.out.println(ans);
         
     }
@@ -44,7 +44,21 @@ public class searchinrotated {
             {
                 return mid-1;
             }
-            if(arr[mid]<arr[start])
+
+            if(arr[mid]==arr[start] && arr[mid]== arr[end])
+            {
+                if(arr[start]>arr[start+1])
+                {
+                    return start;
+                }
+                start++;
+                if(arr[end]<arr[end-1])
+                {
+                    return end-1;
+                }
+                end--;
+            }
+            if(arr[mid]<arr[start] || (arr[mid]==arr[start] && arr[mid]>arr[end]))
             {
                 end=mid-1;
             }
