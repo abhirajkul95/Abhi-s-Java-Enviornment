@@ -1,8 +1,9 @@
 public class noofrotations {
     public static void main(String[] args) {
 
-        int arr[]={2,3,4,5,6,7,1};
+        int arr[]={3,4,7,18,45,1,2};
         int pivot=pivotsearch(arr);
+        System.out.println(pivot);
         int end=arr.length-1;
         int rotations;
         if(pivot==-1)
@@ -14,7 +15,6 @@ public class noofrotations {
         
 
     }
-
     static int pivotsearch(int arr[])
     {
         int start=0;
@@ -55,6 +55,7 @@ public class noofrotations {
         return -1;
 
     }
+
     
 
 }
