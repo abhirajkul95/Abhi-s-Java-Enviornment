@@ -3,7 +3,7 @@ import java.util.List;
 
 public class missing {
     public  void main(String[] args) {
-        int[] arr={3,2,1,4,9,8,7};
+        int[] arr={3,2,1,4,9,6,8,7};
         
         System.out.println(num(arr));
         
