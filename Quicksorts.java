@@ -28,7 +28,8 @@ public class Quicksorts {
                 int temp=arr[s];
                 arr[s]=arr[e];
                 arr[e]=temp;
-                s++;e--;
+                s++;
+                e--;
             }
         }
     }
