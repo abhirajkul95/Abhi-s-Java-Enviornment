@@ -1,6 +1,6 @@
 public class appleskip {
     public static void main(String[] args) {
-        skip("iluvapplevaidehi","");
+        skip("applestevejobs","");
     }
 
     static void skip(String a,String b)
