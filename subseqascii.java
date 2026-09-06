@@ -3,18 +3,18 @@ public class subseqascii {
             prog("","abc");
    }
 
-       static void prog(String p,String up)
+       static void prog(String processed,String unprocessed)
     {
-        if(up.isEmpty())
+        if(unprocessed.isEmpty())
         {
-           System.out.println(p);
+           System.out.println(processed);
            return;
         }
 
-        char ch = up.charAt(0);
+        char ch = unprocessed.charAt(0);
 
-        prog(p+ch,up.substring(1));
-        prog(p,up.substring(1));
-        prog(p+(ch+0),up.substring(1));
+        prog(processed+ch,unprocessed.substring(1));
+        prog(processed,unprocessed.substring(1));
+        prog(processed+(ch+0),unprocessed.substring(1));
     }
 }
